@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="   "
+            android:textSize="15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:text="   "/>
+
+            <Button
+                android:id="@+id/btn_Login"
+                android:layout_width="115dip"
+                android:layout_height="wrap_content"
+                android:text="西南摄像机"
+                android:textColor="#ff000000"
+                android:typeface="sans"
+                android:layout_below="@+id/EDT_User"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp" />
+
+            <Button
+                android:id="@+id/btn_Login2"
+                android:layout_width="115dip"
+                android:layout_height="wrap_content"
+                android:text="东南摄像机"
+                android:textColor="#ff000000"
+                android:typeface="sans"
+                android:layout_below="@+id/EDT_User"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp" />
+
+            <Button
+                android:id="@+id/btn_Login3"
+                android:layout_width="115dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/EDT_User"
+                android:layout_marginTop="12dp"
+                android:text="东北摄像机"
+                android:textColor="#ff000000"
+                android:typeface="sans" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Play"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:text="  "
+            />
+
+            <SurfaceView
+                android:id="@+id/Sur_Player"
+                android:layout_width="340dp"
+                android:layout_height="370dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btn_Login"
+                android:background="#0000ff00" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:text="   "/>
+
+            <Button
+                android:id="@+id/btn_Preview"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:text="播放"
+                android:textColor="#ff000000"
+                android:typeface="sans"
+                android:layout_above="@+id/Sur_Player"
+                android:layout_toEndOf="@+id/btn_Login" />
+
+            <TextView
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:text="   "/>
+
+            <Button
+                android:id="@+id/btn_PTZ"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:text="转向"
+                android:textColor="#ff000000"
+                android:typeface="sans"
+                android:layout_above="@+id/Sur_Player"
+                android:layout_toEndOf="@+id/btn_Preview" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</AbsoluteLayout>
